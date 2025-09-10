@@ -320,6 +320,7 @@ int		cd(char **s, t_var *var);
 char	**export(char **cpyenv, t_lex *lex, t_var *var, int i);
 char	**export2(char **cenv, t_lex *lex, t_var *var, int i);
 char	**unset(char **cpyenvp, char *unsetstr);
+int		ft_isalpha(int c);
 int		exec_builtin_out(char **s, t_var *var, t_lex *lex, t_pipe *pip);
 int		echo(t_var	*var, t_lex *lex);
 void	pwd(void);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   exe_gen2.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdelmann <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jgirard- <jgirard-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 12:51:32 by hdelmann          #+#    #+#             */
-/*   Updated: 2023/06/02 19:05:55 by hdelmann         ###   ########.fr       */
+/*   Updated: 2023/06/02 21:08:06 by jgirard-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,6 @@ void	exe_gen_test(t_lex *lex, t_var *var)
 	if (lex->s[var->z] == NULL)
 		var->z++;
 	else if (check_slash2(lex->s[var->z][0]) == 0)
-		(n(), printf("bash: %s : command not found\n",
+		(n(), printf("bash: %s : commxand not found\n",
 				lex->s[var->z][0]), var->z++);
 }

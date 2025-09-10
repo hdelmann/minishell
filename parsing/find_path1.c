@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   find_path1.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdelmann <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jgirard- <jgirard-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 13:55:09 by hdelmann          #+#    #+#             */
-/*   Updated: 2023/05/26 12:40:07 by hdelmann         ###   ########.fr       */
+/*   Updated: 2023/06/02 21:13:17 by jgirard-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ char	*find_cmd_path(t_var *var, char *cmd)
 		cmd_path = malloc(2 * sizeof(char));
 		cmd_path[0] = '2';
 		cmd_path[1] = '\0';
-		return (cmd_path);
+		return (free(path), cmd_path);
 	}
 	else if (access(path, F_OK | X_OK) == 0)
 		return (path);

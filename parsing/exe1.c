@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   exe1.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdelmann <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jgirard- <jgirard-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 13:47:01 by hdelmann          #+#    #+#             */
-/*   Updated: 2023/06/02 19:08:13 by hdelmann         ###   ########.fr       */
+/*   Updated: 2023/06/02 21:07:50 by jgirard-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ int	check_eq2(char *str, t_var *var)
 		return (1);
 	while (str[i] && str[i] != '=')
 	{
-		if (isalpha(str[i]) == 0 && !str[i + 1])
+		if (ft_isalpha(str[i]) == 0 && !str[i + 1])
 		{
 			printf("bash: export: `%s': not a valid identifier\n", str);
 			g_global.last_err_com = 1;
